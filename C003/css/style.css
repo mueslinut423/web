@@ -1,0 +1,318 @@
+@charset "UTF-8";
+
+/* reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #333333;
+  font-family: '맑은고딕', 'san-serif';
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+ol, ul, li{
+  list-style: none;
+}
+
+img{
+  border: 0px;
+  vertical-align: 0;
+}
+
+.clearfix::before, .clearfix::after{
+  display: block; content: ''; clear: both;
+}
+
+
+/* wrap */
+.wrap{
+  width: 1000px;
+  height: 650px;
+}
+
+
+/* side */
+#side{
+  float: left;
+  width: 200px;
+}
+
+.logo{
+  width: 200px;
+  height: 100px;
+  padding-top: 30px;
+}
+
+nav{
+  position: relative;
+  z-index: 10;
+  margin: 10px;
+  height: 540px;
+  background: #eab1c0;
+  line-height: 30px;
+}
+
+
+/* menu */
+nav ul.menu > li{
+  position: relative;
+  text-align: center;
+  padding: 15px;
+}
+
+nav ul.menu > li:hover{
+  background: #eb9aaf;
+}
+
+nav ul.menu > li > a{
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+nav ul.menu > li > ul.sub{
+  display: none;
+  position: absolute;
+  width: 150px;
+  left: 170px;
+  top: 0px;
+  background: #eab1c0;
+}
+
+nav ul.menu > li > ul.sub > li{
+  padding: 5px;
+}
+
+nav ul.menu > li > ul.sub > li:hover{
+  background: #eb9aaf;
+}
+
+nav ul.menu > li > ul.sub > li > a{
+  font-size: 16px;
+  color: #fff;
+  
+}
+
+/* content */
+#content{
+  float: left;
+}
+
+
+
+/* slide */
+.slide{
+  overflow: hidden;
+  position: relative;
+  width: 800px;
+  height: 350px;
+}
+
+.slide ul.slideList{
+  position: relative;
+  width: 2400px;
+  height: 350px;
+}
+
+.slide ul.slideList li{
+  float: left;
+  position: relative;
+}
+
+.slide ul.slideList li a h1{
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #eab1c0;
+  background: #edd9dec9;
+  padding: 15px 30px;
+}
+
+
+
+
+/* contents */
+.contents{
+  width: 800px;
+  height: 200px;
+}
+
+.contents > div{
+  float: left;
+}
+
+.contents .cont1{
+  width: 300px;
+}
+
+.contents .cont2{
+  padding-top: 10px;
+  width: 300px;
+}
+
+.contents .cont2 .gal_title h3{
+  display: block;
+  height: 50px;
+  width: 85px;
+  line-height: 35px;
+  text-align: center;
+  padding: 10px 15px;
+  background: #eab1c0;
+  color: #fff;
+}
+
+.contents .cont2 .gal_cont{
+  position: relative;
+  padding: 30px 0px;
+  padding-left: 10px;
+  width: 290px;
+  height: 140px;
+  border: 1px solid #eab1c0;
+  background: #fff;
+}
+
+.contents .cont2 .gal_cont ul li{
+  float: left;
+  margin-left: 10px;
+}
+
+.contents .cont3{
+  width: 200px;
+}
+
+
+/* tabmenu */
+.tab-menu{
+  padding-top: 10px;
+}
+
+.tab-btn ul li{
+  float: left;
+  height: 50px;
+  padding: 10px 15px;
+  border: 1px solid #eab1c0;
+  background: #fff;
+  color: #eab1c0;
+}
+
+.tab-btn ul li.active {
+  background: #eab1c0;
+  color: #fff;
+}
+
+.tab-btn ul li a{
+  display: block;
+  line-height: 35px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+.tab-cont{
+  position: relative;
+  width: 290px;
+  height: 140px;
+  border: 1px solid #eab1c0;
+  background: #fff;
+}
+
+.tab-cont .notice{
+  font-size: 15px;
+  padding: 10px;
+  line-height: 30px;
+}
+
+.tab-cont .notice ul li .day{
+  position: absolute;
+  right: 10px;
+}
+
+
+.tab-cont .gal{
+  position: relative;
+  padding: 30px 0px;
+  padding-left: 10px;
+}
+
+.tab-cont .gal ul li{
+  float: left;
+  margin-left: 10px;
+}
+
+/* layerpopup */
+.layerPopup{
+  display: none;
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  background: #f8e1e7;
+  border: 1px solid #eab1c0;
+}
+
+.layerPopup h2{
+  padding: 15px;
+  background: #eab1c0;
+}
+
+.layerPopup p{
+  padding: 15px;
+  line-height: 26px;
+}
+
+.layerPopup h3 a{
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  padding: 10px;
+  background: #eab1c0;
+}
+
+/* footer */
+footer{
+  width: 800px;
+  height: 100px;
+  background: #f8e1e7;
+}
+
+footer div{
+  float: left;
+}
+
+footer .foot1{
+  width: 300px;
+  height: 100px;
+  padding-top: 25px;
+  padding-left: 40px;
+}
+
+footer .foot2{
+  width: 500px;
+  height: 50px;
+  padding-top: 10px;
+  padding-left: 50px;
+}
+
+footer .foot2 ul li{
+  float: left;
+  margin-left: 30px;
+  padding: 5px 10px;
+  background: #eab1c0;
+  font-weight: 500;
+}
+
+footer .foot3{
+  width: 500px;
+  height: 50px;
+  padding-top: 10px;
+  padding-left: 50px;
+}
+footer .foot3 p{
+  color: #555;
+}
